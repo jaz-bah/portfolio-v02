@@ -87,7 +87,7 @@ export default function FeaturedProjects() {
         enableBorderGlow
         clickEffect
         spotlightRadius={40}
-        glowColor="255, 92, 23"
+        glowColor="0, 117, 199"
       />
     </div>
   );

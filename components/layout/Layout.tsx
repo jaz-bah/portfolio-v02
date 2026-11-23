@@ -5,6 +5,7 @@ import Header from "./Header";
 import Navigation from "./Navigation";
 import PageLoad from "./PageLoad";
 import QuickNav from "./QuickNav";
+import QuickNavToast from "./QuickNavToast";
 import Transition from "./Transition";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -18,6 +19,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {children}
       <Footer />
       <AnimatedCursor />
+      <QuickNavToast />
     </Provider>
   );
 }

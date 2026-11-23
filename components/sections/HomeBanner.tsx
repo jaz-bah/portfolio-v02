@@ -73,7 +73,7 @@ export default function HomeBanner() {
       <div className="background">
         <CursorGrid
           cellSize={40}
-          color="#FE7F2D"
+          color="#0075c7"
           radius={140}
           falloff="smooth"
           holdTime={200}
@@ -119,7 +119,7 @@ export default function HomeBanner() {
           sentence="Nest.js Remix.js Next.js Shopify"
           manualMode={false}
           blurAmount={3}
-          borderColor="#ff5c17"
+          borderColor="#0075c7"
           animationDuration={0.5}
           pauseBetweenAnimations={1}
         />

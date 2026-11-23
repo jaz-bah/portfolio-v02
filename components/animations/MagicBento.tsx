@@ -21,7 +21,7 @@ interface MagicBentoProps {
   clickEffect?: boolean;
 }
 const DEFAULT_SPOTLIGHT_RADIUS = 400;
-const DEFAULT_GLOW_COLOR = "255, 92, 23";
+const DEFAULT_GLOW_COLOR = "0, 117, 199";
 const updateCardGlowProperties = (
   card: HTMLElement,
   mouseX: number,
