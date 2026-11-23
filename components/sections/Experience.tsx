@@ -55,31 +55,6 @@ export default function Experience() {
     <section className="jb_experience_section">
       <div className="container mx-auto px-4">
         <Heading title="Experience" />
-        {/* <div className="experience_content" data-cursor-type="none">
-                    <div className="experience_accordion" ref={accordionRef}>
-                        <span className="notification">Click to <br /> expand</span>
-                        {experiences.map((experience, index) => (
-                            <div className="accordion_item" key={index}>
-                                <div className="header">
-                                    <div className="left_box">
-                                        <h2 className="title">{experience.position}</h2>
-                                    </div>
-                                    <div className="right_box">
-                                        <h2 className="title">{experience.company}</h2>
-                                        <h3 className="date">{experience.date}</h3>
-                                    </div>
-                                </div>
-                                <div className="content_wrapper">
-                                    <div
-                                        className="content"
-                                        dangerouslySetInnerHTML={{ __html: experience.description }}
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
-
         <Accordion
           className="experience_accordion"
           transition={{ type: "spring", stiffness: 120, damping: 20 }}

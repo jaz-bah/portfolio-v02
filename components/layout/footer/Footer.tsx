@@ -33,7 +33,7 @@ export default function Footer() {
         <Link
           className="mail w-fit mx-auto"
           href="mailto:jazbahulalam@gmail.com"
-          data-cursor-type="link"
+          
         >
           jazbahulalam@gmail.com
         </Link>
@@ -47,7 +47,7 @@ export default function Footer() {
           {/* <Link
             className="ml-2 cursor-pointer"
             href={"/admin"}
-            data-cursor-type="link"
+            
           >
             Admin
           </Link> */}
@@ -56,7 +56,7 @@ export default function Footer() {
         <ul className="social">
           {socials &&
             socials.map((social, index) => (
-              <li key={index} data-cursor-type="link">
+              <li key={index} >
                 <Link href={social.path}>{social.name}</Link>
               </li>
             ))}

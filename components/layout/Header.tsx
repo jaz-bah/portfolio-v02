@@ -25,7 +25,7 @@ export default function Header() {
         onClick={() =>
           navState === "close" ? setNavState("open") : setNavState("close")
         }
-        data-cursor-type="link"
+        
       >
         <div className="bar"></div>
         <span className="text">Menu</span>
@@ -37,7 +37,7 @@ export default function Header() {
         <span
           className={`scroll_to_top ${scrolled > 9 ? "visible" : ""}`}
           onClick={scrollTop}
-          data-cursor-type="link"
+          
         >
           Scroll to top
         </span>

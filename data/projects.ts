@@ -11,23 +11,13 @@ export interface IProject {
 
 export const projects: IProject[] = [
     {
-        id: 1,
-        title: "OffCulture",
-        tags: ["E-commerce", "Shopify", "Liquid", "Custom Elements", "GSAP"],
-        desk_image: "/static/projects/offculture-pc.webp",
-        mobile_image: "/static/projects/offculture-mobl.webp",
-        description: `I pushed Shopify beyond the usual theme setup with custom Liquid, JavaScript, Custom Elements, and GSAP, building the interactions and animations from scratch to make the storefront feel more alive and responsive.
-Alongside the core Shopify experience, I built custom features like a bundle builder, wishlist system, and passport-based discount flow, with custom logic connecting everything together. The goal was to keep the flexibility of Shopify while adding the kind of functionality you normally wouldn’t get from a standard theme.`,
-        view_link: "https://www.offculturee.com",
-    },
-    {
         id: 2,
         title: "Prompt Architects",
         tags: ["SASS", "Next.js", "WXT", "PostgreSQL", "TypeScript", "TanStack"],
         desk_image: "/static/projects/promptarc-pc.webp",
         mobile_image: "/static/projects/promptarc-mobl.webp",
         description:`It is a web app and browser extension built to make working with AI prompts easier, faster, and more organized. The core idea is simple: enhance your prompts, save your useful ones, and keep your prompt history accessible wherever you work.
-It comes as both a web application and a browser extension, giving you a dedicated space to manage your prompts while also bringing the same workflow directly into your browser.`,
+    It comes as both a web application and a browser extension, giving you a dedicated space to manage your prompts while also bringing the same workflow directly into your browser.`,
         view_link: "https://prompt-architects.com/",
     },
     {
@@ -38,6 +28,26 @@ It comes as both a web application and a browser extension, giving you a dedicat
         mobile_image: "/static/projects/aiemaily-mobl.webp",
         description:`AI-powered mail manager built to make handling emails faster and less overwhelming. It helps you understand your emails, generate replies, stay on top of important messages, and keep your inbox organized from one place.`,
         view_link: "https://aiemaily.com/",
+    },
+    {
+        id: 9,
+        title: "Codebot",
+        tags: ["SASS", "Next.js", "Nest.js", "PostgreSQL", "TypeScript", "TanStack"],
+        desk_image: "/static/projects/codebot-pc.webp",
+        mobile_image: "/static/projects/codebot-mobl.webp",
+        description:`Codebot is the workspace for what you write and reuse: notes, todos, files, components, presets, experts, tools and snippets — all stored server-side and searchable in a single box.`,
+        view_link: "https://codebotapp.onrender.com/",
+        code_link: "https://github.com/jaz-bah/codebot-backend"
+    },
+    {
+        id: 1,
+        title: "OffCulture",
+        tags: ["E-commerce", "Shopify", "Liquid", "Custom Elements", "GSAP"],
+        desk_image: "/static/projects/offculture-pc.webp",
+        mobile_image: "/static/projects/offculture-mobl.webp",
+        description: `I pushed Shopify beyond the usual theme setup with custom Liquid, JavaScript, Custom Elements, and GSAP, building the interactions and animations from scratch to make the storefront feel more alive and responsive.
+Alongside the core Shopify experience, I built custom features like a bundle builder, wishlist system, and passport-based discount flow, with custom logic connecting everything together. The goal was to keep the flexibility of Shopify while adding the kind of functionality you normally wouldn’t get from a standard theme.`,
+        view_link: "https://www.offculturee.com",
     },
     {
         id: 4,

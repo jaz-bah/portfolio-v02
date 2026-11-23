@@ -161,7 +161,7 @@ export default function Navigation() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              data-cursor-type="link"
+              
             >
               {title}
               <ArrowUpRight />

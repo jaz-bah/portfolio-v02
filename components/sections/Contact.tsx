@@ -2,7 +2,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaGithub, FaLinkedin, FaTwitterSquare, FaWhatsapp } from "react-icons/fa";
 import Button from "../others/Button";
 import Heading from "../others/Heading";
 import "./../../styles/components/contact.scss";
@@ -70,8 +70,8 @@ export default function Contact() {
                 </div>
                 <div className="contact_text">
                   <h4>Phone</h4>
-                  <p data-cursor-type="link">
-                    <Link href="tel:+8801712345678">+880 1712 345 678</Link>
+                  <p >
+                    <Link href="tel:+880 1318 106433">+880 1318 106433</Link>
                   </p>
                 </div>
               </li>
@@ -81,8 +81,8 @@ export default function Contact() {
                 </div>
                 <div className="contact_text">
                   <h4>Email</h4>
-                  <p data-cursor-type="link">
-                    <Link href="mailto:info@example.com">info@example.com</Link>
+                  <p >
+                    <Link href="mailto:jazbahulalam@example.com">jazbahulalam@example.com</Link>
                   </p>
                 </div>
               </li>
@@ -92,25 +92,30 @@ export default function Contact() {
                 </div>
                 <div className="contact_text">
                   <h4>Location</h4>
-                  <p>123 Main St, Anytown, USA</p>
+                  <p>Dhaka, Bangladesh</p>
                 </div>
               </li>
             </ul>
 
             <ul className="social">
-              <li data-cursor-type="link">
-                <Link href="https://www.facebook.com/" target="_blank">
+              <li >
+                <Link href="https://www.facebook.com/share/16Q1cjRwCVR/" target="_blank">
                   <FaFacebookSquare />
                 </Link>
               </li>
-              <li data-cursor-type="link">
-                <Link href="https://www.twitter.com/" target="_blank">
-                  <FaTwitterSquare />
+              <li >
+                <Link href="https://www.linkedin.com/in/jazbah" target="_blank">
+                  <FaLinkedin />
                 </Link>
               </li>
-              <li data-cursor-type="link">
-                <Link href="https://www.linkedin.com/" target="_blank">
-                  <FaLinkedin />
+              <li >
+                <Link href="https://wa.me/8801939127879?text=Hi" target="_blank">
+                  <FaWhatsapp />
+                </Link>
+              </li>
+              <li >
+                <Link href="https://github.com/jaz-bah" target="_blank">
+                  <FaGithub />
                 </Link>
               </li>
             </ul>

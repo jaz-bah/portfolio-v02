@@ -43,11 +43,11 @@ export default function Button({ children, type, onClick, url, target, className
     return (
         <div ref={buttonRef} className={className}>
             {type == "Link" ?
-                <Link href={url ? url : "#"} className="button" data-cursor-type="link" target={target}>
+                <Link href={url ? url : "#"} className="button"  target={target}>
                     <span className="text">{children}</span>
                     <span className="bg"></span>
                 </Link> :
-                <button className='button' onClick={onClick} data-cursor-type="link">
+                <button className='button' onClick={onClick} >
                     <span className="text">{children}</span>
                     <span className="bg"></span>
                 </button>

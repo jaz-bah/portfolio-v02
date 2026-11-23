@@ -1,6 +1,6 @@
 import { ArrowUpRight, Code, Eye } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";``
+import Link from "next/link";
 import { IProject } from "../../data/projects";
 
 interface Props {

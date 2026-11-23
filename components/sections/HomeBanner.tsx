@@ -92,7 +92,7 @@ export default function HomeBanner() {
       <div className="max-w-7xl mx-auto flex h-full items-center justify-center">
         <div className="content_wrapper">
           <div className="top_content">
-            <h2 className="banner_text" data-cursor-type="heading">
+            <h2 className="banner_text">
               {TEXTS.map(({ type, value }, index) =>
                 type === "text" ? (
                   <span

@@ -140,19 +140,43 @@ export const AnimatedSlides = ({
               <Button className="mt-5 md:mt-10" url={slides[active].live_url} type="Link" target="_blank">View Project</Button>
             )}
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex items-center gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
+              aria-label="Previous slide"
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
             >
               <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
+              aria-label="Next slide"
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
             >
               <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
             </button>
+
+            <div
+              className="ml-2 flex items-center gap-1 text-sm tabular-nums text-gray-500 dark:text-neutral-500"
+              aria-live="polite"
+            >
+              <span className="relative inline-block h-5 w-[2ch] overflow-hidden text-right">
+                <AnimatePresence mode="popLayout" initial={false}>
+                  <motion.span
+                    key={active}
+                    initial={{ y: 12, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -12, opacity: 0 }}
+                    transition={{ duration: 0.2, ease: "easeInOut" }}
+                    className="absolute inset-0 text-black dark:text-white"
+                  >
+                    {String(active + 1).padStart(2, "0")}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
+              <span>/</span>
+              <span>{String(slides.length).padStart(2, "0")}</span>
+            </div>
           </div>
         </div>
       </div>

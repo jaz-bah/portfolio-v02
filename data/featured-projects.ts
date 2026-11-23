@@ -9,6 +9,13 @@ export interface IFeaturedProject {
 
 export const featuredProjects: IFeaturedProject[] = [
     {
+        title: "Codebot",
+        tags: ["SASS", "Next.js", "Nest.js", "PostgreSQL", "TypeScript", "TanStack"],
+        image: "/static/projects/codebot-pc.webp",
+        description:`Codebot is the workspace for what you write and reuse: notes, todos, files, components, presets, experts, tools and snippets — all stored server-side and searchable in a single box.`,
+        live_url: "https://codebotapp.onrender.com/",
+    },
+    {
         title: "Offculture",
         description: `I pushed Shopify beyond the usual theme setup with custom Liquid, JavaScript, Custom Elements, and GSAP, building the interactions and animations from scratch to make the storefront feel more alive and responsive.
 Alongside the core Shopify experience, I built custom features like a bundle builder, wishlist system, and passport-based discount flow, with custom logic connecting everything together. The goal was to keep the flexibility of Shopify while adding the kind of functionality you normally wouldn’t get from a standard theme.
@@ -31,14 +38,5 @@ It comes as both a web application and a browser extension, giving you a dedicat
         tags: ["SASS", "Next.js", "PostgreSQL", "TypeScript", "TanStack"],
         image: "/static/projects/aiemaily-pc.webp",
         live_url: "https://aiemaily.com/",
-    },
-    {
-        title: "L’Gran",
-        description:
-            "L’Gran, built with HTML, SCSS & JS, fuses fine dining aesthetics with modern design, rich visuals, elegant typography & smooth interactions, serving luxury on every scroll.",
-        tags: ["HTML/SCSS", "Javascript"],
-        image: "/static/images/lgran-pc.png",
-        live_url: "https://jaz-bah.github.io/lgran/",
-        git_url: "https://github.com/jaz-bah/lgran",
     },
 ]
