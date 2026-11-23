@@ -129,7 +129,11 @@ export default function Navigation() {
           <X />
         </button>
 
-        <div className="flex justify-end" onClick={() => startNavigating("/contact")}>
+        <div
+          className="flex justify-end"
+          data-cursor="link"
+          onClick={() => startNavigating("/contact")}
+        >
           <Button className="content">Message</Button>
         </div>
       </div>
@@ -139,7 +143,11 @@ export default function Navigation() {
           <ul>
             {menus.map(({ title, path }) => (
               <li key={path}>
-                <div className="link" onClick={() => startNavigating(path)}>
+                <div
+                  className="link"
+                  data-cursor="link"
+                  onClick={() => startNavigating(path)}
+                >
                   <span>{title}</span>
                   <span>{title}</span>
                 </div>

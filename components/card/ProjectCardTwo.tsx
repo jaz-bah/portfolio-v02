@@ -66,6 +66,7 @@ export default function ProjectCardTwo({
     <div
       ref={card}
       className="project_card_2"
+      data-cursor="alternate"
       onClick={() => window.open(link, "_blank", "noopener,noreferrer")}
     >
       <div className="svg_border">

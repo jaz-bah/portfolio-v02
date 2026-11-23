@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { FaFacebookSquare, FaGithub, FaLinkedin, FaTwitterSquare, FaWhatsapp } from "react-icons/fa";
+import { setGlobalCursor } from "../cursor/AnimatedCursor";
 import Button from "../others/Button";
 import Heading from "../others/Heading";
 import "./../../styles/components/contact.scss";
@@ -34,6 +35,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("loading");
     setErrorMsg("");
+    setGlobalCursor("busy");
 
     try {
       const res = await fetch("/api/contact", {
@@ -53,6 +55,8 @@ export default function Contact() {
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Failed to send.");
+    } finally {
+      setGlobalCursor(null);
     }
   };
 
@@ -86,7 +90,7 @@ export default function Contact() {
                   </p>
                 </div>
               </li>
-              <li>
+              <li data-cursor="location">
                 <div className="contact_icon">
                   <MapPin />
                 </div>

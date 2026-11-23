@@ -22,10 +22,10 @@ export default function Header() {
     <div className="jb_header">
       <div
         className="menu_btn"
+        data-cursor="link"
         onClick={() =>
           navState === "close" ? setNavState("open") : setNavState("close")
         }
-        
       >
         <div className="bar"></div>
         <span className="text">Menu</span>
@@ -36,8 +36,8 @@ export default function Header() {
       <div className="scroller">
         <span
           className={`scroll_to_top ${scrolled > 9 ? "visible" : ""}`}
+          data-cursor="link"
           onClick={scrollTop}
-          
         >
           Scroll to top
         </span>

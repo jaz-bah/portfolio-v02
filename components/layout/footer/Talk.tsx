@@ -5,7 +5,7 @@ import { useTheme } from "@/context/use-theme";
 export default function Talk() {
   const { startNavigating } = useTheme();
   return (
-    <div className="" onClick={() => startNavigating("/contact")}>
+    <div className="" data-cursor="link" onClick={() => startNavigating("/contact")}>
       <TextPressure
         text="Let's Talk"
         flex

@@ -39,7 +39,7 @@ export default function About() {
             </Button>
           </div>
 
-          <div className="img_content">
+          <div className="img_content" data-cursor="person">
             <div className="imgbox">
               <ImageShaderEffect imageSrc="/static/images/about.png" />
             </div>

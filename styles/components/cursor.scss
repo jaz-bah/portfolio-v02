@@ -1,0 +1,48 @@
+/* ---------------------------------------------------------------------------
+   Custom animated cursor
+   The sprite sheets are generated from the Windows .ani files by
+   `npm run cursors` (see scripts/generate-cursors.mjs).
+--------------------------------------------------------------------------- */
+
+.jz_cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform;
+  transform: translate3d(-200px, -200px, 0);
+  contain: layout style;
+}
+
+.jz_cursor__sprite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  will-change: background-position, transform, opacity;
+  backface-visibility: hidden;
+}
+
+/*
+ * Hide the OS cursor only while the custom cursor is actually mounted.
+ * The class is added by <AnimatedCursor /> on fine-pointer desktops only,
+ * so touch devices and no-JS users keep their native cursor.
+ */
+@media (hover: hover) and (pointer: fine) {
+  html.jz_cursor-enabled,
+  html.jz_cursor-enabled * {
+    cursor: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jz_cursor__sprite {
+    will-change: transform;
+  }
+}

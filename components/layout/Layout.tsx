@@ -1,3 +1,4 @@
+import AnimatedCursor from "../cursor/AnimatedCursor";
 import Provider from "../providers/Provider";
 import Footer from "./footer/Footer";
 import Header from "./Header";
@@ -16,6 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Transition />
       {children}
       <Footer />
+      <AnimatedCursor />
     </Provider>
   );
 }
