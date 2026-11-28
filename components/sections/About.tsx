@@ -34,9 +34,22 @@ export default function About() {
               </TextAnimate>
             </div>
 
-            <Button type="Link" url="/static/pdf/Jazbah-CV.pdf" target="_blank">
-              Download CV
-            </Button>
+            <div className="flex gap-4">
+              <Button
+                type="Link"
+                url="/static/pdf/Jazbah - CV.pdf"
+                target="_blank"
+              >
+                Download CV
+              </Button>
+              <Button
+                type="Link"
+                url="/static/pdf/Jazbah - CV - ATS.pdf"
+                target="_blank"
+              >
+                ATS Friendly CV
+              </Button>
+            </div>
           </div>
 
           <div className="img_content" data-cursor="person">

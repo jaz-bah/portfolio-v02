@@ -61,9 +61,9 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact_section h-screen">
+    <section className="contact_section h-auto md:h-screen">
       <div className="container px-4 mx-auto">
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
           <div className="contact_info">
             <Heading title="Contact" />
 
